@@ -18,12 +18,17 @@ abbr -a gsl 'git shortlog'
 abbr -a rf 'exec fish'
 abbr -a rfc 'clear && exec fish'
 
-abbr -a ca 'conda activate'
+abbr -a cda 'conda activate'
+abbr -a cdd 'conda deactivate'
 
 abbr -a db 'distrobox'
 abbr -a dbc 'distrobox create'
 abbr -a dbl 'distrobox list'
 abbr -a dbe 'distrobox enter'
+
+abbr -a pm 'podman'
+
+abbr -a cm 'chezmoi'
 
 alias ls 'exa --icons --group-directories-first --classify --grid'
 alias ll 'exa --icons --group-directories-first --classify --long --header --git'
@@ -44,7 +49,7 @@ end
 
 if set -q ZELLIJ
 else
-  zellij options --disable-mouse-mode
+  zellij
 end
 
 set -x EDITOR /usr/bin/micro
