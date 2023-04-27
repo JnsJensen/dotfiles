@@ -55,11 +55,12 @@ function fish_right_prompt
     if test -n "$CONTAINER_ID"
       set system "$system.$CONTAINER_ID"
     end
-  else
-    set system "host"
+    printf (__batman_color_snd)"("(__batman_color_fst)(echo "$system" | sed -e $expr)(__batman_color_snd)")"(__batman_color_off)" "
   end
+    #  else
+    #    set system "host"
+    #  end
 
-  printf (__batman_color_snd)"("(__batman_color_fst)(echo "$system" | sed -e $expr)(__batman_color_snd)")"(__batman_color_off)" "
 
   # printf (__batman_color_dim)(date +%H(__batman_color_fst):(__batman_color_dim)%M(__batman_color_fst):(__batman_color_dim)%S)(__batman_color_off)" "
   printf (__batman_color_dim)(date +%H(__batman_color_fst):(__batman_color_dim)%M)(__batman_color_off)" "
