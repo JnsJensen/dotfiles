@@ -1,4 +1,4 @@
-lineocal options = {
+local options = {
 
   icons = {
     breadcrumb = "»", -- symbol used in the command line area that shows your active key combo

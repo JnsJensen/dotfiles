@@ -4,7 +4,14 @@ local overrides = require("custom.configs.overrides")
 local plugins = {
 
   -- Override plugin definition options
-
+  {
+    "lambdalisue/suda.vim",
+    lazy = false,
+  },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -25,12 +32,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = {
-      overrides.mason,
-      ensure_installed = {
-        "rust-analyzer",
-      },
-    }
+    opts = overrides.mason
   },
 
   {
