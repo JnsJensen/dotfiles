@@ -1,11 +1,18 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR GIT_REPOS_VISITED:/home/jens/repos/gnome/hidetopbar\x1e/home/jens/repos/gnome/gnome\x2dshell\x2dextension\x2dddterm\x1e/home/jens/\x2elocal/share/gnome\x2dshell/extensions/hidetopbar\x40mathieu\x2ebidon\x2eca\x1e/home/jens/repos/neovim\x1e/home/jens/\x2econfig/nvim\x1e/home/jens/\x2elocal/share/omf/themes/batman\x1e/home/jens/\x2elocal/share/chezmoi\x1e/home/jens/repos/tg
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_ca:conda\x20activate
+SETUVAR _fish_abbr_cda:conda\x20activate
+SETUVAR _fish_abbr_cdd:conda\x20deactivate
+SETUVAR _fish_abbr_cm:chezmoi
 SETUVAR _fish_abbr_db:distrobox
 SETUVAR _fish_abbr_dbc:distrobox\x20create
 SETUVAR _fish_abbr_dbe:distrobox\x20enter
 SETUVAR _fish_abbr_dbl:distrobox\x20list
+SETUVAR _fish_abbr_dbr:distrobox\x20rm
+SETUVAR _fish_abbr_dbs:distrobox\x20stop
+SETUVAR _fish_abbr_ga:git\x20add\x20\x2e
 SETUVAR _fish_abbr_gc:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gca:git\x20commit\x20\x2dam\x20\x22\x25\x22
 SETUVAR _fish_abbr_gl:git\x20log
@@ -15,13 +22,21 @@ SETUVAR _fish_abbr_gs:git\x20status
 SETUVAR _fish_abbr_gsl:git\x20shortlog
 SETUVAR _fish_abbr_gsw:git\x20switch
 SETUVAR _fish_abbr_gswc:git\x20switch\x20\x2dc
+SETUVAR _fish_abbr_pm:podman
 SETUVAR _fish_abbr_refish:exec\x20fish
 SETUVAR _fish_abbr_refishc:clear\x20\x26\x26\x20exec\x20fish
 SETUVAR _fish_abbr_rf:exec\x20fish
 SETUVAR _fish_abbr_rfc:clear\x20\x26\x26\x20exec\x20fish
+SETUVAR _fish_abbr_ts:tailscale
+SETUVAR _fish_abbr_tsdown:tailscale\x20down
+SETUVAR _fish_abbr_tsip:tailscale\x20ip
+SETUVAR _fish_abbr_tss:tailscale\x20status
+SETUVAR _fish_abbr_tssh:tailscale\x20ssh
+SETUVAR _fish_abbr_tsup:tailscale\x20up
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
+SETUVAR _fisher_kpbs5_2F_git_2E_fish_files:\x7e/\x2econfig/fish/functions/_git_fish_echo\x2efish\x1e\x7e/\x2econfig/fish/functions/bselect\x2efish\x1e\x7e/\x2econfig/fish/functions/gfold\x2efish\x1e\x7e/\x2econfig/fish/functions/should_i_commit\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_gh_abbr\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_git_abbr\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_git_repos\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_in_git_repo_root_directory\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_pre_commit\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_remind_me_about_my_git_aliases\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_remind_me_to_git_commit\x2efish\x1e\x7e/\x2econfig/fish/completions/repos\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish\x1ekpbs5/git\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
@@ -52,6 +67,6 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/jens/\x2enodel\x2dglobal/bin\x1e/home/jens/\x2enpm\x2dglobal/bin\x1e/home/jens/\x2ecargo/bin\x1e/home/jens/miniconda3/bin
+SETUVAR fish_user_paths:/home/jens/\x2elocal/bin\x1e/home/jens/\x2enodel\x2dglobal/bin\x1e/home/jens/\x2enpm\x2dglobal/bin\x1e/home/jens/\x2ecargo/bin\x1e/home/jens/miniconda3/bin
 SETUVAR nvm_data:/home/jens/\x2elocal/share/nvm
 SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist
