@@ -201,6 +201,7 @@ local default_plugins = {
 
   {
     "numToStr/Comment.nvim",
+    lazy = false,
     -- keys = { "gc", "gb" },
     init = function()
       require("core.utils").load_mappings "comment"

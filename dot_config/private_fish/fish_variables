@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR GIT_REPOS_VISITED:/home/jens/repos/gnome/hidetopbar\x1e/home/jens/repos/gnome/gnome\x2dshell\x2dextension\x2dddterm\x1e/home/jens/\x2elocal/share/gnome\x2dshell/extensions/hidetopbar\x40mathieu\x2ebidon\x2eca\x1e/home/jens/repos/neovim\x1e/home/jens/\x2econfig/nvim\x1e/home/jens/\x2elocal/share/omf/themes/batman\x1e/home/jens/\x2elocal/share/chezmoi\x1e/home/jens/repos/tg
+SETUVAR GIT_REPOS_VISITED:/home/jens/repos/gnome/hidetopbar\x1e/home/jens/repos/gnome/gnome\x2dshell\x2dextension\x2dddterm\x1e/home/jens/\x2elocal/share/gnome\x2dshell/extensions/hidetopbar\x40mathieu\x2ebidon\x2eca\x1e/home/jens/repos/neovim\x1e/home/jens/\x2econfig/nvim\x1e/home/jens/\x2elocal/share/omf/themes/batman\x1e/home/jens/\x2elocal/share/chezmoi\x1e/home/jens/repos/tg\x1e/home/jens/rnd/colcon_ws/src/arc\x1e/home/jens/\x2elocal/share/nvim/lazy/indent\x2dblankline\x2envim
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_ca:conda\x20activate
 SETUVAR _fish_abbr_cda:conda\x20activate

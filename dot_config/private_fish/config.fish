@@ -3,16 +3,16 @@ if status is-interactive
     atuin init fish | source
 end
 
-abbr --set-cursor -a gc 'git commit -m "%"'
-abbr -a ga 'git add .'
-abbr --set-cursor -a gca 'git commit -am "%"'
-abbr -a gs 'git status'
-abbr -a gsw 'git switch'
-abbr -a gswc 'git switch -c'
-abbr -a gl 'git log'
-abbr -a gpl 'git pull'
-abbr -a gph 'git push'
-abbr -a gsl 'git shortlog'
+# abbr --set-cursor -a gc 'git commit -m "%"'
+# abbr -a ga 'git add .'
+# abbr --set-cursor -a gca 'git commit -am "%"'
+# abbr -a gs 'git status'
+# abbr -a gsw 'git switch'
+# abbr -a gswc 'git switch -c'
+# abbr -a gl 'git log'
+# abbr -a gpl 'git pull'
+# abbr -a gph 'git push'
+# abbr -a gsl 'git shortlog'
 
 abbr -a rf 'exec fish'
 abbr -a rfc 'clear && exec fish'
@@ -55,14 +55,14 @@ alias llet 'exa --icons --group-directories-first --classify --tree --level=2 --
 # end
 # # <<< conda initialize <<<
 
-set -x EDITOR /usr/bin/micro
+set -x EDITOR ~/.local/bin/nvim
 
 
-function list_dir --on-variable PWD
-  ls -GF
-end
+# function list_dir --on-variable PWD
+#   ls -GF
+# end
 
-sleep 0.1
+# sleep 0.1
 
 # if set -q ZELLIJ
    # conda activate base
@@ -70,6 +70,10 @@ sleep 0.1
 # else
    # zellij -l orin
 # end
+
+alias ccwts 'github-copilot-cli what-the-shell'
+alias ccgit 'github-copilot-cli git-assist'
+alias ccgh 'github-copilot-cli gh-assist'
 
 alias vim 'nvim'
 if test -z "$TMUX" 

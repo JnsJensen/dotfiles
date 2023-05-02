@@ -5,13 +5,38 @@ local plugins = {
 
   -- Override plugin definition options
   {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+  },
+
+  {
+    "folke/todo-comments.nvim",
+  },
+
+  {
+     "m-demare/hlargs.nvim",
+  },
+
+  {
+    "rhysd/vim-clang-format",
+  },
+
+  {
+    "github/copilot.vim",
+    lazy = false,
+  },
+
+  {
     "lambdalisue/suda.vim",
     lazy = false,
   },
+
   {
     "christoomey/vim-tmux-navigator",
     lazy = false,
   },
+
   {
     "neovim/nvim-lspconfig",
     dependencies = {
