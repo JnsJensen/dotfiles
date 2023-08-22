@@ -1,6 +1,11 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR GIT_REPOS_VISITED:/home/jens/repos/gnome/hidetopbar\x1e/home/jens/repos/gnome/gnome\x2dshell\x2dextension\x2dddterm\x1e/home/jens/\x2elocal/share/gnome\x2dshell/extensions/hidetopbar\x40mathieu\x2ebidon\x2eca\x1e/home/jens/repos/neovim\x1e/home/jens/\x2econfig/nvim\x1e/home/jens/\x2elocal/share/omf/themes/batman\x1e/home/jens/\x2elocal/share/chezmoi\x1e/home/jens/repos/tg\x1e/home/jens/rnd/colcon_ws/src/arc\x1e/home/jens/\x2elocal/share/nvim/lazy/indent\x2dblankline\x2envim
+SETUVAR GIT_FISH_REPOS_DB:/home/jens/\x2elocal/share/fish/git\x2efish/repos\x2esqlite3
+SETUVAR GIT_REPOS_VISITED:/home/jens/\x2elocal/share/gnome\x2dshell/extensions/hidetopbar\x40mathieu\x2ebidon\x2eca\x1e/home/jens/repos/neovim\x1e/home/jens/\x2econfig/nvim\x1e/home/jens/\x2elocal/share/omf/themes/batman\x1e/home/jens/\x2elocal/share/chezmoi\x1e/home/jens/rnd/colcon_ws/src/arc\x1e/home/jens/\x2elocal/share/nvim/lazy/indent\x2dblankline\x2envim\x1e/home/jens/repos/computer\x2dvision/point\x2dcloud\x2dobject\x2dtracking\x1e/home/jens/repos/multi\x2dagent\x2drobotics/arc\x2dreport\x1e/home/jens/repos/computer\x2dvision/pcod\x2dpaper\x2dtypst\x1e/home/jens/repos/multi\x2dagent\x2drobotics/ORB\x2dSLAM3\x2dSTEREO\x2dFIXED\x1e/home/jens/development/flutter\x1e/home/jens/repos/chat\x1e/home/jens/repos/Autodesk\x2dFusion\x2d360\x2dfor\x2dLinux\x1e/home/jens/repos/multi\x2dagent\x2drobotics/arc\x1e/home/jens/repos/asus_zenbook_ux3402za
+SETUVAR --export PYENV_ROOT:/home/jens/\x2epyenv
+SETUVAR TLDR_PROGRAM_BLACKLIST_CREATION_TIMESTAMP:1692387258
+SETUVAR --path TLDR_PROGRAM_BLACKLIST_PATH:/home/jens/\x2elocal/share/fish/tldr\x2don\x2derror\x2dblacklist\x2etxt
+SETUVAR TLDR_PROGRAM_BLACKLIST_TIMEOUT:604800
 SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_ca:conda\x20activate
 SETUVAR _fish_abbr_cda:conda\x20activate
@@ -35,8 +40,9 @@ SETUVAR _fish_abbr_tssh:tailscale\x20ssh
 SETUVAR _fish_abbr_tsup:tailscale\x20up
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
-SETUVAR _fisher_kpbs5_2F_git_2E_fish_files:\x7e/\x2econfig/fish/functions/_git_fish_echo\x2efish\x1e\x7e/\x2econfig/fish/functions/bselect\x2efish\x1e\x7e/\x2econfig/fish/functions/gfold\x2efish\x1e\x7e/\x2econfig/fish/functions/should_i_commit\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_gh_abbr\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_git_abbr\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_git_repos\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_in_git_repo_root_directory\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_pre_commit\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_remind_me_about_my_git_aliases\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_remind_me_to_git_commit\x2efish\x1e\x7e/\x2econfig/fish/completions/repos\x2efish
-SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish\x1ekpbs5/git\x2efish
+SETUVAR _fisher_kpbs5_2F_git_2E_fish_files:\x7e/\x2econfig/fish/functions/_git_fish_echo\x2efish\x1e\x7e/\x2econfig/fish/functions/bselect\x2efish\x1e\x7e/\x2econfig/fish/functions/gcl\x2efish\x1e\x7e/\x2econfig/fish/functions/gi\x2efish\x1e\x7e/\x2econfig/fish/functions/gs\x2efish\x1e\x7e/\x2econfig/fish/functions/gstat\x2efish\x1e\x7e/\x2econfig/fish/functions/should_i_commit\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_gh_abbr\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_git_abbr\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_git_keybindings\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_git_repos\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_in_git_repo_root_directory\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_pre_commit\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_remind_me_about_my_git_aliases\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_remind_me_to_git_commit\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/_remind_me_to_use_branches\x2efish\x1e\x7e/\x2econfig/fish/completions/gi\x2efish\x1e\x7e/\x2econfig/fish/completions/repos\x2efish
+SETUVAR _fisher_kpbs5_2F_what_2D_changed_2E_fish_files:\x7e/\x2econfig/fish/conf\x2ed/_what\x2dchanged\x2efish\x1e\x7e/\x2econfig/fish/completions/whatchanged\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish\x1ekpbs5/git\x2efish\x1ekpbaks/border\x2efish\x1ekpbaks/source\x2efish\x1ekpbaks/log\x2efish\x1ekpbaks/tldr\x2don\x2derror\x2efish\x1ekpbaks/peopletime\x2efish\x1ekristoffer\x2dpbs/autols\x2dfish\x1ekpbs5/what\x2dchanged\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
@@ -67,6 +73,4 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/jens/\x2elocal/bin\x1e/home/jens/\x2enodel\x2dglobal/bin\x1e/home/jens/\x2enpm\x2dglobal/bin\x1e/home/jens/\x2ecargo/bin\x1e/home/jens/miniconda3/bin
-SETUVAR nvm_data:/home/jens/\x2elocal/share/nvm
-SETUVAR nvm_mirror:https\x3a//nodejs\x2eorg/dist
+SETUVAR fish_user_paths:/home/jens/\x2epyenv/bin\x1e/home/jens/development/flutter/bin\x1e/home/jens/\x2elocal/bin\x1e/home/jens/\x2enodel\x2dglobal/bin\x1e/home/jens/\x2enpm\x2dglobal/bin\x1e/home/jens/\x2ecargo/bin\x1e/home/jens/miniconda3/bin

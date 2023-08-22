@@ -1,6 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    atuin init fish | source
+    # atuin init fish | source
 end
 
 # abbr --set-cursor -a gc 'git commit -m "%"'
@@ -13,6 +13,12 @@ end
 # abbr -a gpl 'git pull'
 # abbr -a gph 'git push'
 # abbr -a gsl 'git shortlog'
+
+set -x CHROME_EXECUTABLE /var/lib/flatpak/exports/bin/com.brave.Browser
+set -x FUSION_IDSDK false
+
+set BORDER_ALIGNMENT 0.5
+# set -x WINEPREFIX /home/jens/prefix32
 
 abbr -a rf 'exec fish'
 abbr -a rfc 'clear && exec fish'
@@ -38,6 +44,9 @@ abbr -a tsup 'tailscale up'
 abbr -a tsdown 'tailscale down'
 abbr -a tssh 'tailscale ssh'
 
+alias off 'sudo systemctl poweroff'
+alias reboot 'sudo systemctl reboot'
+
 alias ls 'exa --icons --group-directories-first --classify --grid'
 alias ll 'exa --icons --group-directories-first --classify --long --header --git'
 alias lle 'exa --icons --group-directories-first --classify --long --header --git --extended'
@@ -45,6 +54,8 @@ alias lle 'exa --icons --group-directories-first --classify --long --header --gi
 alias lst 'exa --icons --group-directories-first --classify --tree --level=2'
 alias llt 'exa --icons --group-directories-first --classify --tree --level=2 --long --header --git'
 alias llet 'exa --icons --group-directories-first --classify --tree --level=2 --long --header --git --extended'
+
+alias brave-browser 'flatpak run com.brave.Browser'
 
 # alias contiker 'podman run --privileged --sysctl net.ipv6.conf.all.disable_ipv6=0 --mount type=bind,source=/home/jens/repos/contiki-ng,destination=/home/user/contiki-ng -e DISPLAY=:0 -v/tmp/.X11-unix:/tmp/.X11-unix -v /dev/bus/usb:/dev/bus/usb -v /dev/ttyUSB0:/dev/ttyUSB0:rw --user root:root --userns keep-id --user 1000  -ti contiker/contiki-ng'
 
@@ -58,9 +69,9 @@ alias llet 'exa --icons --group-directories-first --classify --tree --level=2 --
 set -x EDITOR ~/.local/bin/nvim
 
 
-# function list_dir --on-variable PWD
-#   ls -GF
-# end
+function list_dir --on-variable PWD
+  ls -GF
+end
 
 # sleep 0.1
 

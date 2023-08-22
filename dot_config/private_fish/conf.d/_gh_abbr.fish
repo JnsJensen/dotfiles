@@ -1,6 +1,11 @@
 command --query gh; or return
+set -l A abbr --add
 
-abbr -a ghs gh status
+$A ghs gh status
 
 # open the current repo in the browser
-abbr -a ghb 'gh browse 2>/dev/null'
+$A ghb gh browse
+
+$A ghp gh pr list
+$A ghr gh repo view --web
+$A ghg gh gist list

@@ -1,6 +1,9 @@
 pane_frames false
 copy_on_select true
 copy_command "wl-copy" // wayland
+// simplified_ui true
+default_layout "orin"
+
 ui {
     pane_frames {
         rounded_corners true
@@ -38,7 +41,7 @@ themes {
 
 theme "batman"
 mirror_session true
-layout_dir "~/.config/zellij/layouts"
+// layout_dir "~/.config/zellij/layouts"
 
 keybinds {
     normal {
