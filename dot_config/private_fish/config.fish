@@ -16,6 +16,7 @@ end
 
 set -x CHROME_EXECUTABLE /var/lib/flatpak/exports/bin/com.brave.Browser
 set -x FUSION_IDSDK false
+set -x PYTHONUNBUFFERED 1
 
 set BORDER_ALIGNMENT 0.5
 # set -x WINEPREFIX /home/jens/prefix32
@@ -44,6 +45,8 @@ abbr -a tsup 'tailscale up'
 abbr -a tsdown 'tailscale down'
 abbr -a tssh 'tailscale ssh'
 
+abbr -a --position anywhere apt 'nala'
+
 alias off 'sudo systemctl poweroff'
 alias reboot 'sudo systemctl reboot'
 
@@ -57,6 +60,8 @@ alias llet 'exa --icons --group-directories-first --classify --tree --level=2 --
 
 alias brave-browser 'flatpak run com.brave.Browser'
 
+alias space 'duf --hide-fs squashfs'
+alias power 'upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "state:|to full:|percentage:|energy-rate:|energy:|energy-full:|charge-cycles:|time to empty:"'
 # alias contiker 'podman run --privileged --sysctl net.ipv6.conf.all.disable_ipv6=0 --mount type=bind,source=/home/jens/repos/contiki-ng,destination=/home/user/contiki-ng -e DISPLAY=:0 -v/tmp/.X11-unix:/tmp/.X11-unix -v /dev/bus/usb:/dev/bus/usb -v /dev/ttyUSB0:/dev/ttyUSB0:rw --user root:root --userns keep-id --user 1000  -ti contiker/contiki-ng'
 
 # # >>> conda initialize >>>
@@ -81,6 +86,8 @@ end
 # else
    # zellij -l orin
 # end
+
+pyenv init - | source
 
 alias ccwts 'github-copilot-cli what-the-shell'
 alias ccgit 'github-copilot-cli git-assist'
